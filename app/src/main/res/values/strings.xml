@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">RelativeLayoutMaterial</string>
+    <string name="txvMonument" translatable="false">Catedral</string>
+    <string name="txvDateVisit" translatable="false">Fecha Visita</string>
+    <string name="txvTypeVisit" translatable="false">Tipo Visita</string>
+    <string name="etxDateVisit" translatable="false">Fecha Visita</string>
+    <string name="etxTypeVisit" translatable="false">Tipo Visita</string>
+    <string name="btnReserved" translatable="false">Reservar</string>
+</resources>

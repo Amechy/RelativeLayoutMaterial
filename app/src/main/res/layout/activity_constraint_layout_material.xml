@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.relativelayoutmaterial.RelativeLayoutMaterialActivity">
+
+
+    <ImageView
+        android:id="@+id/imgCity"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/malaga"
+        tools:ignore="ContentDescription"
+        app:layout_constraintRight_toLeftOf="@+id/imgFavorite"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgFavorite"
+        android:layout_marginEnd="8dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="14dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgFavorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/btn_star_big_off"
+        android:contentDescription=""
+        tools:ignore="ContentDescription"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="182dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txvMonument"
+        android:text="@string/txvMonument"
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+
+
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/imgCity"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/imgCity" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txvDateVisit"
+        android:text="@string/txvDateVisit"
+        android:layout_marginStart="30dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/etxDateVisit"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/txvMonument" />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/etxDateVisit"
+        android:id="@+id/etxDateVisit"
+
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/etxTypeVisit"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toRightOf="@+id/txvTypeVisit" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txvTypeVisit"
+        android:text="@string/txvTypeVisit"
+
+
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="57dp"
+        app:layout_constraintTop_toBottomOf="@+id/txvMonument"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/txvDateVisit" />
+
+    <EditText
+        android:id="@+id/etxTypeVisit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/etxTypeVisit"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/etxDateVisit"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txvTypeVisit"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/etxDateVisit" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnBuy"
+        android:text="Comprar"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="33dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnReservadete"
+        android:text="@string/btnReserved"
+        app:layout_constraintRight_toLeftOf="@+id/btnBuy"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp" />
+
+</android.support.constraint.ConstraintLayout>
