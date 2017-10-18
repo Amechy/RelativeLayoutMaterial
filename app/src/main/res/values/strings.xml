@@ -6,4 +6,5 @@
     <string name="etxDateVisit" translatable="false">Fecha Visita</string>
     <string name="etxTypeVisit" translatable="false">Tipo Visita</string>
     <string name="btnReserved" translatable="false">Reservar</string>
+    <string name="imvmalaga">malaga</string>
 </resources>
